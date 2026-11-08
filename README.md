@@ -18,23 +18,6 @@ A static portfolio site for data-science roles. No framework, no build step, no 
 
 `portfolio.html` is the entire site in one 600 KB file — open it by double-clicking, or email it to someone. The three-page version is what you deploy.
 
-## Publish to GitHub Pages
-
-**Option A — user site at `https://nx-manoj.github.io`** (recommended for a portfolio)
-
-1. Create a public repo named exactly `nx-manoj.github.io`.
-2. Upload the *contents* of this folder (not the folder itself) to the repo root.
-3. Wait a minute, then open `https://nx-manoj.github.io`.
-
-**Option B — project site at `https://nx-manoj.github.io/portfolio`**
-
-1. Create a public repo named `portfolio`.
-2. Upload the contents of this folder to the repo root.
-3. Settings → Pages → Source: *Deploy from a branch* → Branch: `main`, folder `/ (root)` → Save.
-4. The site appears at `https://nx-manoj.github.io/portfolio`.
-
-All links inside the site are relative, so both options work without editing anything.
-
 ## Editing
 
 Everything is plain HTML with the CSS in a `<style>` block at the top of each file.
