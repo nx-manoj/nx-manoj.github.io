@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manoj Yeduvaka — data scientist</title>
+<meta name="description" content="Data science case studies in Python: Bengaluru residential prices and seven years of Indian air quality. Notebooks, reports and decks, all reproducible.">
+<meta name="author" content="Manoj Yeduvaka">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+<meta property="og:title" content="Manoj Yeduvaka — data scientist">
+<meta property="og:description" content="Data science case studies in Python: Bengaluru residential prices and seven years of Indian air quality. Notebooks, reports and decks, all reproducible.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='none'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%230071E3'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/archivo-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="nav">
+  <div class="shell nav-in">
+    <a class="brand" href="index.html">
+      <span class="dot" aria-hidden="true"></span>
+      <span>Manoj Yeduvaka<small>Data scientist</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#data">The data</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Let's talk</a>
+    </nav>
+    <div class="nav-end">
+      <button class="theme-btn" type="button" aria-label="Switch appearance">
+        <svg class="sun" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="3.2" stroke="currentColor" stroke-width="1.4"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3.1 3.1l1.1 1.1M11.8 11.8l1.1 1.1M12.9 3.1l-1.1 1.1M4.2 11.8l-1.1 1.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <svg class="moon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13.5 9.6A5.9 5.9 0 0 1 6.4 2.5a5.9 5.9 0 1 0 7.1 7.1Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 4h12M1 10h12" stroke="currentColor" stroke-width="1.5"/></svg>
+      Menu
+    </button>
+  </div>
+  <div class="menu" id="menu">
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#data">The data</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="shell hero-in">
+      <p class="hero-eyebrow">
+        <span>Data scientist · Visakhapatnam, India</span>
+        <span class="rule" aria-hidden="true"></span>
+        <span class="badge"><i aria-hidden="true"></i>Open to data science roles</span>
+      </p>
+
+      <h1 class="display hero-title" id="hero-title">
+        I take messy public data to a decision.
+      </h1>
+
+      <p class="hero-sub">
+        Two end-to-end case studies, <strong>576,000 raw records</strong> cleaned between them —
+        with an honest account of where each model stops working. Every figure on this site is
+        generated from code you can re-run.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn solid" href="#work">
+          <span>Read the case studies
+            <svg class="arw" width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M1 12L12 1M12 1H3.5M12 1V9.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </span>
+        </a>
+        <a class="btn" href="assets/Yeduvaka-Manoj-Chaandu-Resume.pdf" download>
+          Download CV
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1v10M2 7l4.5 4.5L11 7" stroke="currentColor" stroke-width="1.5"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="mailto:manojyeduvaka@gmail.com">Email me</a>
+      </div>
+    </div>
+
+    <div class="shell">
+      <div class="stats">
+        <div class="st">
+          <div class="n">576,000</div>
+          <div class="l">raw records cleaned and analysed</div>
+        </div>
+        <div class="st">
+          <div class="n">2</div>
+          <div class="l">end-to-end case studies, each with a report and a deck</div>
+        </div>
+        <div class="st">
+          <div class="n">9</div>
+          <div class="l">models compared against a naive baseline</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ WORK ============================ -->
+  <section class="sec" id="work">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="sec-idx"><b>01</b> Selected work</p>
+        <h2 class="sec-title">Two projects, carried from raw file to a defended conclusion</h2>
+        <p class="sec-lead">
+          Both follow the same discipline: state the question, count what cleaning removes,
+          compare against a naive baseline, and report the failure modes.
+        </p>
+      </div>
+
+      <div class="work-grid">
+        <article class="pcard">
+          <div class="pcard-media">
+            <span class="fig">Fig. 01 — held-out predictions</span>
+            <img src="assets/img/bengaluru-model.webp" alt="Held-out predictions and residuals for the Bengaluru price model" loading="lazy">
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-kicker"><span>Regression</span><span>13,320 listings</span></div>
+            <h3><a href="work/bengaluru-housing.html">What actually sets a Bengaluru asking price</a></h3>
+            <p>Built-up area explains most of the price; locality sets the rate. The same square
+               foot costs 4.8× more in one part of the city than another.</p>
+            <div class="metrics">
+              <div><div class="k">R² 0.68</div><div class="v">held out</div></div>
+              <div><div class="k">₹27.6 L</div><div class="v">MAE</div></div>
+              <div><div class="k">4.8×</div><div class="v">locality spread</div></div>
+            </div>
+            <span class="go">Read the case study <i aria-hidden="true"></i></span>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-media">
+            <span class="fig">Fig. 02 — two constant panels</span>
+            <img src="assets/img/air-trend.webp" alt="Mean AQI on two constant panels, 2017 to 2023" loading="lazy">
+          </div>
+          <div class="pcard-body">
+            <div class="pcard-kicker"><span>Time series</span><span>254,138 city-days</span></div>
+            <h3><a href="work/india-air-quality.html">Seven years of Indian air, on a like-for-like panel</a></h3>
+            <p>The monitoring network grew twelve-fold, which fakes a trend. Rebuilt on a constant
+               panel, AQI fell 17.9% — while the season moves 2.6× more.</p>
+            <div class="metrics">
+              <div><div class="k">−17.9%</div><div class="v">since 2017</div></div>
+              <div><div class="k">2.56×</div><div class="v">seasonal swing</div></div>
+              <div><div class="k">8.8%</div><div class="v">over persistence</div></div>
+            </div>
+            <span class="go">Read the case study <i aria-hidden="true"></i></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ DATA ============================ -->
+  <section class="sec" id="data">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="sec-idx"><b>02</b> From the Bengaluru study</p>
+        <h2 class="sec-title">What a square foot costs, locality by locality</h2>
+        <p class="sec-lead">
+          Median asking price per square foot, for the eight most and least expensive of 91
+          Bengaluru localities with at least 30 listings.
+        </p>
+      </div>
+
+      <div class="explorer">
+        <div class="exp-top">
+          <div class="exp-read">
+            <div class="nm" id="loc-name">Rajaji Nagar</div>
+            <div class="big" id="loc-big">₹13,719<span class="cur">/sq ft</span></div>
+          </div>
+          <div class="seg" role="group" aria-label="Chart view">
+            <button type="button" data-mode="high" aria-pressed="true">Most expensive</button>
+            <button type="button" data-mode="low" aria-pressed="false">Most affordable</button>
+          </div>
+        </div>
+
+        <p class="exp-cap">Rajaji Nagar asks 4.8× what Attibele does for the same square foot.</p>
+
+        <div class="bars" id="loc-bars" role="group" aria-label="Localities by median price per square foot"></div>
+
+        <p class="exp-detail" id="loc-detail" aria-live="polite">
+          <strong>Rajaji Nagar</strong> — a typical flat asks ₹2.50 crore, across 96 listings.
+        </p>
+
+        <div class="exp-foot">
+          <span>Source: 11,423 cleaned listings · median per locality, at least 30 listings</span>
+          <a href="work/bengaluru-housing.html">Full case study →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= MORE WORK ========================= -->
+  <section class="sec" id="more">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="sec-idx"><b>03</b> Also in the repository</p>
+        <h2 class="sec-title">Smaller studies, same habits</h2>
+      </div>
+
+      <div class="rows">
+        <a class="row" href="https://github.com/nx-manoj/Machine-learning-projects/tree/main/India-Agro-Power-Water-Nexus" target="_blank" rel="noopener">
+          <span class="rn">01</span>
+          <h3>India Agro-Power-Water Nexus</h3>
+          <p>Panel OLS, ridge fixed effects, random forest and gradient boosting across 20 states, 2004–2025, with K-means policy clustering.</p>
+          <span class="tag">Econometrics + ML</span>
+        </a>
+        <a class="row" href="https://github.com/nx-manoj/Machine-learning-projects/tree/main/BullDozer" target="_blank" rel="noopener">
+          <span class="rn">02</span>
+          <h3>BullDozer price prediction</h3>
+          <p>Sale-price regression on the classic bulldozer auction dataset — feature engineering from dates and machine configuration.</p>
+          <span class="tag">Regression</span>
+        </a>
+        <a class="row" href="https://github.com/nx-manoj/Machine-learning-projects/blob/main/notebooks/Heart%20Disease%20Analysis.ipynb" target="_blank" rel="noopener">
+          <span class="rn">03</span>
+          <h3>Heart disease analysis</h3>
+          <p>Exploratory classification notebook: risk-factor distributions and a baseline model on clinical measurements.</p>
+          <span class="tag">Classification</span>
+        </a>
+        <a class="row" href="https://github.com/nx-manoj/DataPilot" target="_blank" rel="noopener">
+          <span class="rn">04</span>
+          <h3>DataPilot</h3>
+          <p>MIT-licensed Python EDA library built on Polars and Arrow, with five LLM providers.</p>
+          <span class="tag">Library</span>
+        </a>
+        <a class="row" href="https://github.com/nx-manoj/loan-risk-platform" target="_blank" rel="noopener">
+          <span class="rn">05</span>
+          <h3>Loan risk platform</h3>
+          <p>XGBoost credit-risk model with SHAP explanations, served through FastAPI and Docker.</p>
+          <span class="tag">ML in production</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section class="sec" id="about">
+    <div class="shell">
+      <div class="sec-head">
+        <p class="sec-idx"><b>04</b> About</p>
+        <h2 class="sec-title">I care more about the cleaning than the model</h2>
+      </div>
+
+      <div class="about">
+        <div class="about-body">
+          <p>Most of the value in a data project is decided before any model is fitted.</p>
+
+          <p>In the Bengaluru study, one row in seven was unusable — duplicates, impossible
+            floor areas, area stored as text across six units. In the air-quality study, the
+            monitoring network grew twelve-fold, so a national average would have measured
+            coverage rather than air. Both of those are data decisions, and both change the answer.</p>
+
+          <p>So I work in a fixed order: audit the raw file, make every exclusion explicit
+            and counted, model against a naive baseline, then report the failure modes. A model
+            that under-predicts above ₹1.5 crore is more useful described than hidden.</p>
+
+          <p>Each project ships as a reproducible notebook plus a written report and a
+            deck — the same finding in three formats, all generated from one source so no number
+            drifts between them.</p>
+
+          <p class="dim">BCA in Data Science, Aditya Educational Institutions, Visakhapatnam —
+            expected 2027. Microsoft PL-300, Power BI Data Analyst Associate, certified.</p>
+        </div>
+
+        <div>
+          <blockquote class="pullquote">A model that is unbiased in the middle and wrong at the top is a checking tool, not a valuation engine.</blockquote>
+
+          <figure class="portrait" aria-label="Portrait">
+            <div class="ph" aria-hidden="true">MY</div>
+            <img src="assets/img/portrait.jpg" alt="Manoj Yeduvaka" onerror="this.remove()">
+            <figcaption class="tag">Visakhapatnam</figcaption>
+          </figure>
+
+          <div class="tools">
+            <div>
+              <h3>Tools</h3>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span>
+                <span class="chip">scikit-learn</span><span class="chip">matplotlib</span><span class="chip">seaborn</span>
+                <span class="chip">Jupyter</span><span class="chip">Git</span>
+              </div>
+            </div>
+            <div>
+              <h3>Methods</h3>
+              <div class="chips">
+                <span class="chip">Cleaning &amp; audit</span><span class="chip">EDA</span>
+                <span class="chip">Feature engineering</span><span class="chip">Cross-validation</span>
+                <span class="chip">Time-based splits</span><span class="chip">Baseline comparison</span>
+                <span class="chip">Permutation importance</span><span class="chip">Panel construction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================== CONTACT =========================== -->
+  <section class="contact" id="contact">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="shell">
+      <p class="kicker"><span class="dot" aria-hidden="true"></span>Open to data science roles</p>
+
+      <h2>Let's talk about work that has to hold up.</h2>
+
+      <div class="contact-row">
+        <div>
+          <p class="dim">
+            The fastest way to judge the work is to open a notebook and re-run it.
+            Happy to walk through either project.
+          </p>
+          <a class="mail-link" href="mailto:manojyeduvaka@gmail.com">
+            manojyeduvaka@gmail.com
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M1 12L12 1M12 1H3.5M12 1V9.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href="assets/Yeduvaka-Manoj-Chaandu-Resume.pdf" download>Download CV (PDF)</a>
+          <a href="https://linkedin.com/in/manoj-yeduvaka-599112313" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/nx-manoj" target="_blank" rel="noopener">GitHub
+            <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M1 12L12 1M12 1H3.5M12 1V9.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <a href="https://github.com/nx-manoj/Machine-learning-projects" target="_blank" rel="noopener">All repositories
+            <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M1 12L12 1M12 1H3.5M12 1V9.5" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="shell foot">
+    <span>© 2026 Manoj Yeduvaka</span>
+    <span>Static HTML · no framework</span>
+    <a class="totop" href="#top">Back to top
+      <svg width="11" height="11" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 12V1M1 6L6.5 1L12 6" stroke="currentColor" stroke-width="1.5"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script>window.LOC_DATA={"high":[{"name":"Rajaji Nagar","ppsf":13719,"price":250.5,"n":96},{"name":"Malleshwaram","ppsf":12500,"price":252.0,"n":49},{"name":"Indira Nagar","ppsf":11565,"price":191.0,"n":41},{"name":"Frazer Town","ppsf":9964,"price":210.0,"n":36},{"name":"Koramangala","ppsf":9124,"price":150.0,"n":67},{"name":"Hebbal Kempapura","ppsf":9118,"price":170.0,"n":31},{"name":"Hosakerehalli","ppsf":8952,"price":151.5,"n":34},{"name":"Kundalahalli","ppsf":7432,"price":97.5,"n":40}],"low":[{"name":"Attibele","ppsf":2885,"price":24.9,"n":39},{"name":"Chandapura","ppsf":2951,"price":30.0,"n":62},{"name":"Electronic City Phase II","ppsf":3226,"price":40.0,"n":100},{"name":"Channasandra","ppsf":3576,"price":40.0,"n":36},{"name":"Begur Road","ppsf":3700,"price":49.3,"n":68},{"name":"Sarjapur","ppsf":3871,"price":50.0,"n":78},{"name":"Bommasandra","ppsf":3894,"price":40.4,"n":34},{"name":"Bisuvanahalli","ppsf":3898,"price":41.0,"n":37}]};</script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>
